@@ -4,7 +4,7 @@ import "./Activities.css"
 const Activities = ({activities}) => {
     console.log(activities)
     return (
-        <div className='activities-container'>
+        <div className='activities-container '>
             {
                 activities.map((activity) =>
             
