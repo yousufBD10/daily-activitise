@@ -4,7 +4,9 @@
     grid-template-columns: 3fr 1fr;
 }
 .left-side{
-    border: 1px solid rosybrown;
+   
+    margin-left: 20px;
+    margin-right: 20px;
 }
 .right-side{
     border: 1px solid rosybrown;

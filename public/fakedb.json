@@ -1,7 +1,7 @@
 [
     {"id":1,"image":"https://thumbs.dreamstime.com/z/young-girl-doing-fitness-exercises-18102179.jpg","name": "Exercise","detail":"Pull, Push, Squat, Lunge, Hinge, Rotation and Gait. When performing all of these movements, you will be able to stimulate all of the major muscle groups in your body.", "age":"19-25","time":30
 },
-{"id":2,"image":"https://images.pexels.com/photos/3771821/pexels-photo-3771821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","name": "Brushing Teeth","detail":"When you brush your teeth, you help remove food and plaque — a sticky white film that forms on your teeth and contains bacteria. After you eat a meal or snack that contains sugar, the bacteria in plaque produce acids that attack tooth enamel.", "age":"5-60","time":5
+{"id":2,"image":"https://images.pexels.com/photos/3771821/pexels-photo-3771821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1","name": "Brushing Teeth","detail":"When you brush your teeth, you help remove food and plaque — a sticky white film that forms on your teeth and contains bacteria.", "age":"5-60","time":5
 },
 {"id":3,"image":"https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80","name": "Breakfast","detail":"It replenishes your supply of glucose to boost your energy levels and alertness, while also providing other essential nutrients required for good health.", "age":"15-20","time":20
 },

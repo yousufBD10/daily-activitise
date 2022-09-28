@@ -11,10 +11,12 @@ const Home = () => {
   
     return (
         <div>
+             <h1 className='text-center text-6xl '>Daily Activities</h1>
              <div className='home-container'>
                 <div className="left-side">
+                  
                     <Activities  activities={activities}></Activities>
-                    <h1>hello im left side{activities.length}</h1>
+                   
                 </div>
                 <div className="right-side">
                     <h3>hello im right side</h3>
