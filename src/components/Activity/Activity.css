@@ -1,0 +1,14 @@
+.card-container{
+    width:350px;
+    height: 500px;
+    box-shadow: 4px 3px 8px;
+    padding: 10px;
+    gap: 20px;
+
+
+}
+.card-container img{
+    width: 100%;
+  
+
+}
