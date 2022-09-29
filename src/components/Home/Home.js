@@ -39,9 +39,9 @@ const Home = () => {
   
     return (
         <div>
-            <div className='flex justify-center my-6  '>
-            <img className='w-16' src={require("../image/logo.png")} alt="" srcset="" />
-            <h1 className=' text-6xl text-orange-500 font-bold ms-2'> Daily Activities</h1>
+            <div className='flex justify-center my-6 mx-4 '>
+            <img className='lg:w-16 w-8' src={require("../image/logo.png")} alt="" srcset="" />
+            <h1 className=' lg:text-6xl text-2xl text-orange-500 font-bold ms-2'> Daily Activities</h1>
             </div>
 
             
@@ -58,7 +58,7 @@ const Home = () => {
                 </div>
                 <div className="right-side  ">
                   
-                  <div className='border shadow-zinc-500'>
+                  <div className='border p-4 shadow-zinc-500'>
                   
                     <Myinfo></Myinfo>
                     <div>
