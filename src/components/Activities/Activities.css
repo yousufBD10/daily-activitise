@@ -1,5 +1,5 @@
 .activities-container{
- 
+ margin: 2px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }

@@ -24,9 +24,11 @@ const Home = () => {
     const timeBreak = (timer)=>{
       const newTimer = [timer]
       setbreakTime(newTimer)
-      console.log(newTimer)
+     
     };
     const activityBtn = ()=>{
+     
+   
       Swal.fire(
         'Activity Complete',
         'Have a nice day.',
@@ -41,9 +43,10 @@ const Home = () => {
             <img className='w-16' src={require("../image/logo.png")} alt="" srcset="" />
             <h1 className=' text-6xl text-orange-500 font-bold ms-2'> Daily Activities</h1>
             </div>
+
             
              <div className='home-container'>
-                <div className="left-side">
+                <div className='left-side '>
                 {
                       activities.map((activity)=>
                       (  <Activities addToTime={()=>addToTime(activity)} activities={activity}></Activities> )
@@ -53,14 +56,14 @@ const Home = () => {
                  
                    
                 </div>
-                <div className="right-side ">
+                <div className="right-side  ">
                   
-                  <div className='border shadow-zinc-500 p-5'>
+                  <div className='border shadow-zinc-500'>
                   
                     <Myinfo></Myinfo>
                     <div>
                 <h1 className='text-3xl  mx-9'>Add A Break</h1>
-                <div className='flex p-4 m-3'>
+                <div className='flex  m-3'>
                     <button  onClick={()=>timeBreak(20)} className='bg-blue-300 hover:bg-blue-400 rounded-lg font-bold
                     px-6 py-2 text-white bold text-xl mx-3'>20m</button>
                     <button onClick={()=>timeBreak(30)} className='bg-blue-300 hover:bg-blue-400 rounded-lg font-bold
