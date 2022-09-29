@@ -63,12 +63,12 @@ const Home = () => {
                     <Myinfo></Myinfo>
                     <div>
                 <h1 className='text-3xl  mx-9'>Add A Break</h1>
-                <div className='flex  m-3'>
+                <div className='lg:flex lg:m-3 '>
                     <button  onClick={()=>timeBreak(20)} className='bg-blue-300 hover:bg-blue-400 rounded-lg font-bold
                     px-6 py-2 text-white bold text-xl mx-3'>20m</button>
                     <button onClick={()=>timeBreak(30)} className='bg-blue-300 hover:bg-blue-400 rounded-lg font-bold
                     px-6 py-2 text-white bold text-xl mx-3'>30m</button>
-                    <button onClick={()=>timeBreak(45)} className='bg-blue-300 hover:bg-blue-400 rounded-lg font-bold
+                    <button onClick={()=>timeBreak(45)} className='bg-blue-300 mb-3 hover:bg-blue-400 rounded-lg font-bold
                     px-6 py-2 text-white bold text-xl mx-3'>45m</button>
                     <button onClick={()=>timeBreak(60)} className='bg-blue-300 hover:bg-blue-400 rounded-lg font-bold
                     px-6 py-2 text-white bold text-xl mx-3'>60m</button>
