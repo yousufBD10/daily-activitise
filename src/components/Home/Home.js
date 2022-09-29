@@ -7,7 +7,7 @@ import './Home.css'
 const Home = () => {
     const [activities,setActivities] = useState([]);
     const [addTime,setaddTime] = useState([]);
-    const [breakTime,setbreakTime] = useState([]);
+    const [breakTime,setbreakTime] = useState([0]);
     useEffect(()=>{
         fetch('fakedb.json')
         .then(res => res.json())
@@ -29,8 +29,11 @@ const Home = () => {
   
     return (
         <div>
+            <div className='flex justify-center my-6  '>
+            <img className='w-16' src={require("../image/logo.png")} alt="" srcset="" />
+            <h1 className=' text-6xl text-orange-500 font-bold ms-2'> Daily Activities</h1>
+            </div>
             
-             <h1 className='text-center text-6xl my-6 '>Daily Activities</h1>
              <div className='home-container'>
                 <div className="left-side">
                 {
