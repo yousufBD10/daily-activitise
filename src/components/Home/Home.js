@@ -7,6 +7,7 @@ import './Home.css'
 const Home = () => {
     const [activities,setActivities] = useState([]);
     const [addTime,setaddTime] = useState([]);
+    const [breakTime,setbreakTime] = useState([]);
     useEffect(()=>{
         fetch('fakedb.json')
         .then(res => res.json())
@@ -19,6 +20,11 @@ const Home = () => {
       setaddTime(newTime)
      
     };
+    const timeBreak = (timer)=>{
+      const newTimer = [timer]
+      setbreakTime(newTimer)
+      console.log(newTimer)
+    }
     
   
     return (
@@ -41,7 +47,21 @@ const Home = () => {
                   <div className='border shadow-zinc-500 p-5'>
                   
                     <Myinfo></Myinfo>
-                   <Utilities addTime={addTime}></Utilities>
+                    <div>
+                <h1 className='text-3xl  mx-9'>Add A Break</h1>
+                <div className='flex p-4 m-3'>
+                    <button  onClick={()=>timeBreak(20)} className='bg-blue-300
+                    px-6 py-2 text-white bold text-xl mx-3'>20m</button>
+                    <button onClick={()=>timeBreak(30)} className='bg-blue-300
+                    px-6 py-2 text-white bold text-xl mx-3'>30m</button>
+                    <button onClick={()=>timeBreak(45)} className='bg-blue-300
+                    px-6 py-2 text-white bold text-xl mx-3'>45m</button>
+                    <button onClick={()=>timeBreak(60)} className='bg-blue-300
+                    px-6 py-2 text-white bold text-xl mx-3'>60m</button>
+
+                </div>
+            </div>
+                   <Utilities breakTime={breakTime}  addTime={addTime}></Utilities>
 
             </div>
                   </div>
