@@ -1,8 +1,14 @@
 import React from 'react';
 
-const Utilities = () => {
+const Utilities = ({addTime}) => {
+    let activityTime = 0;
+    for(const time of addTime){
+        activityTime = activityTime + time.time;
+       console.log(time)
+    } 
     return (
         <div>
+            
             <div>
                 <h1 className='text-3xl  mx-9'>Add A Break</h1>
                 <div className='flex p-4 m-3'>
@@ -19,8 +25,8 @@ const Utilities = () => {
             </div>
             <div>
                 <h1 className='my-5 text-4xl px-8'>Activity Details</h1>
-                <h1 className='bg-red-400 p-2 rounded text-3xl px-8'>Activity Details : </h1>
-                <h1 className='bg-red-400 mt-3 p-2 rounded text-3xl px-8'>Activity Details : </h1>
+                <h1 className='bg-red-400 p-2 rounded text-3xl px-8'>Activity Details : {activityTime}m </h1>
+                <h1 className='bg-red-400 mt-3 p-2 rounded text-3xl px-8'>Break Time : </h1>
                 
 
             </div>
